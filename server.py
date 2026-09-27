@@ -6,7 +6,7 @@ import re
 import html
 
 MODEL = "voxguard_model.npz"
-PORT = 8000
+PORT = int(os.environ.get("PORT", 8000))
 
 
 def extract_features(path):
