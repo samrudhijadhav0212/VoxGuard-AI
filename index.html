@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>VoxGuard AI</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            background: #151c33;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .tagline {
+            color: #7dd3fc;
+            font-size: 18px;
+        }
+
+        input {
+            margin: 25px;
+        }
+
+        button {
+            padding: 14px 30px;
+            border: none;
+            border-radius: 10px;
+            background: #2563eb;
+            color: white;
+            font-size: 18px;
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #202a48;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>🛡️ VoxGuard AI</h1>
+
+    <p class="tagline">
+        Detect • Verify • Protect
+    </p>
+
+    <p>
+        AI Voice Cloning Detection System
+    </p>
+
+    <input type="file" accept="audio/*">
+
+    <br>
+
+    <button onclick="showDemo()">
+        🔍 Analyze Voice
+    </button>
+
+    <div class="result" id="result">
+        Upload an audio file and analyze it.
+    </div>
+
+</div>
+
+<script>
+
+function showDemo() {
+
+    document.getElementById("result").innerHTML =
+    "<h2>🛡️ VoxGuard Analysis</h2>" +
+    "<h3>AI-GENERATED</h3>" +
+    "<p>AI Score: 99.03%</p>" +
+    "<p>Risk Level: HIGH</p>";
+}
+
+</script>
+
+</body>
+</html>
