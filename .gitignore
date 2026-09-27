@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+dataset/
+upload_*
+*.m4a
+*.amr
+*.mp3
+tall python-scipy
